@@ -42,6 +42,7 @@ export default function Nav({ user }: Session) {
           </li>
         )}
         {user && (
+          <Link href={"/dashboard"}>
           <li>
             <Image
               src={user?.image as string}
@@ -51,6 +52,7 @@ export default function Nav({ user }: Session) {
               className="rounded-full"
             />
           </li>
+          </Link>
         )}
       </ul>
       <AnimatePresence>
