@@ -6,6 +6,8 @@ import { useCartStore } from "@/store";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import CheckoutForm from "./CheckoutForm";
+import OrderAnimation from "./OrderAnimation";
+import { motion } from "framer-motion";
 
 
 const stripePromise = loadStripe(
@@ -50,12 +52,13 @@ export default function Checkout() {
 
   return (
     <div>
+      {!clientSecret && <OrderAnimation />}
       {clientSecret && (
-        <div>
+        <motion.div initial={{opacity:0}} animate={{opacity:1}} >
           <Elements options={options} stripe={stripePromise}>
            <CheckoutForm clientSecret={clientSecret}/>
           </Elements>
-        </div>
+        </motion.div>
       )}
     </div>
   );

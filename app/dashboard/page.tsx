@@ -37,7 +37,7 @@ export default async function Dashboard() {
         <div>
             <div className="font-medium">
                 {orders.map((order) => (
-                    <div key={order.id} className="rounded-lg p-8 my-12">
+                    <div key={order.id} className="rounded-lg p-8 my-4 bg-base-200">
                         <h2>Order reference: {order.id}</h2>                     
                         <p className="text-md py-2">
                             Status: <span className={`${order.status === 'complete' ? "bg-teal-500" : "bg-orange-500"} text-white py-1 rounded-md px-2 mx-2 text-sm`}>{order.status}</span>
