@@ -17,7 +17,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
 
   export default async function handler (req:NextApiRequest, res: NextApiResponse){
     const buf = await buffer(req)
-    const sig = req.headers ["stripe-signature"]
+    const sig = req.headers ["stripe-signature"]  as string
     
     if(!sig) {
         return res.status(400).send('Missing the stripe signature')
