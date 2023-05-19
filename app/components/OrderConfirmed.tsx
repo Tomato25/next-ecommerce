@@ -33,7 +33,7 @@ export default function OfrderConfirmed() {
         <h2 className="text-sm my-4">Check you email for the receipt.</h2>
         <Image src={run} className="py-8" alt="running man" />
         <div className="flex items-center justify-center gap-12">
-          <Link href={"/dasboard"}>
+          <Link href={"/dashboard"}>
             <button onClick={checkoutOrder}  className="font-medium">
               Check you order
             </button>
