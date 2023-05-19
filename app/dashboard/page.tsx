@@ -13,7 +13,7 @@ const fetchOrders = async () => {
   }
 
   const orders = await prisma.order.findMany({
-    where: { userId: user?.user?.id }, // {/*status: "compete"*/}
+    where: { userId: user?.user?.id }, // {/*status: "complete"*/}
     include: { products: true },
   });
   return orders;

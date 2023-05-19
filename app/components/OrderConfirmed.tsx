@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useCartStore } from "@/store";
 import { useEffect } from "react";
 
-export default function OfrderConfirmed() {
+export default function OrderConfirmed() {
   const cartStore = useCartStore();
 
   useEffect(() => {

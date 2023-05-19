@@ -27,7 +27,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
 
     try{
         event = stripe.webhooks.constructEvent(
-            buf,
+            buf.toString(),
             sig,
             process.env.STRIPE_WEBHOOK_SECRET!
         )
