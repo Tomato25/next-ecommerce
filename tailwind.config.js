@@ -14,6 +14,16 @@ module.exports = {
         lobster: ["var(--font-lobster)"],
         roboto: ["var(--font-roboto)"],
       },
+      height: {
+        '90vh': '90vh',
+        '80vh': '80vh',
+        '40vh': '40vh',
+        '60vh': '60vh',
+
+      },
+      backgroundImage: {
+        'hero-pattern': "url('../public/bgImage.jpg')",
+      }
     },
   },
   plugins: [require("daisyui")],
