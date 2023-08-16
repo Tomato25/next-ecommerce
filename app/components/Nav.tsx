@@ -9,14 +9,15 @@ import { useCartStore } from "@/store";
 import { AiFillShopping } from "react-icons/ai";
 import { AnimatePresence, motion } from "framer-motion";
 import DarkLight from "./DarkLight";
+import {SiAdidas} from 'react-icons/si'
 
 export default function Nav({ user }: Session) {
   const cartStore = useCartStore();
 
   return (
-    <nav className="flex justify-between items-center py-12">
+    <nav className="flex justify-between items-center py-6 sm:py-12">
       <Link href={"/"}>
-        <h1 className="font-lobster text-xl">Sneakers Direct</h1>
+        <h1 className="font-lobster text-5xl"><SiAdidas /></h1>
       </Link>
       <ul className="flex items-center gap-8">
         <li
