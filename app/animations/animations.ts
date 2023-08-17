@@ -1,20 +1,22 @@
+import { delay } from "framer-motion";
+
 export const listVariant = {
     visible: {
         opacity: 1,
         transition: {
           when: "beforeChildren",
-          staggerChildren: 0.6
+          staggerChildren: 0.4,
+          delay:0.2
+          
+          
         }
       },
       hidden: {
         opacity: 0,
-        transition: {
-          when: "afterChildren"
-        }
       }
     };
   
  export const itemVariant = {
-      visible: { opacity: 1, x: 0 },
-      hidden: { opacity: 0, x: -100 }
+      visible: { opacity: 1, y: 0 },
+      hidden: { opacity: 0, y: -100 }
     };
