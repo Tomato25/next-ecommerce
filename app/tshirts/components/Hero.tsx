@@ -1,11 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import image from "../../../public/shoesbig.jpg";
+import image from "../../../public/tshirtsbig.jpg";
 import { motion } from "framer-motion";
 
 export default function Hero() {
-
   return (
     <>
       <motion.div
@@ -26,7 +25,7 @@ export default function Hero() {
             transition={{ delay: 1.3 }}
             className="sm:text-8xl text-7xl text-center font-roboto text-white"
           >
-            Which one next?
+            Choose your style
           </motion.h1>
         </div>
       </motion.div>

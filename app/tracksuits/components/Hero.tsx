@@ -1,15 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import image from "../../../public/shoesbig.jpg";
+import image from "../../../public/tracksuitbig.jpg";
 import { motion } from "framer-motion";
 
 export default function Hero() {
-
   return (
     <>
       <motion.div
-       initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5, delay:1}}
+        initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5, delay:1}}
         className="flex 2xl:flex-row flex-col xl:gap-12 h-80vh w-full justify-between items-center mb-6  xl:h-60vh bg-black md:p-8 p-4"
       >
         <Image
@@ -26,7 +25,7 @@ export default function Hero() {
             transition={{ delay: 1.3 }}
             className="sm:text-8xl text-7xl text-center font-roboto text-white"
           >
-            Which one next?
+            Show your colors
           </motion.h1>
         </div>
       </motion.div>

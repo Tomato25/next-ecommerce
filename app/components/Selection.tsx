@@ -47,7 +47,7 @@ export default function () {
           </Link>
         </motion.div>
         <motion.div variants={itemVariant} className="flex flex-col ">
-          <Link href={"/shoes"}>
+          <Link href={"/tshirts"}>
             <Image src={shirts} alt="shoes" />
             <h1 className="text-2xl py-4 self-center text-center font-bold">
               T-shirts
@@ -55,7 +55,7 @@ export default function () {
           </Link>
         </motion.div>
         <motion.div variants={itemVariant} className="flex flex-col ">
-          <Link href={"/shoes"}>
+          <Link href={"/tracksuits"}>
             <Image src={tracksuits} alt="shoes" />
             <h1 className="text-2xl py-4 self-center text-center font-bold">
               Tracksuits

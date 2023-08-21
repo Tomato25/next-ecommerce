@@ -8,6 +8,7 @@ export default function AddCart({
   name,
   id,
   image,
+  description,
   unit_amount,
   quantity,
 }: AddCartType) {
@@ -15,7 +16,7 @@ export default function AddCart({
   const [added, setAdded] = useState(false);
 
   const handleAddToCart = () => {
-    cartStore.addProduct({ id, image, unit_amount, quantity, name });
+    cartStore.addProduct({ id, image, unit_amount, quantity, name, description });
     setAdded(true);
     setTimeout(() => {
       setAdded(false);

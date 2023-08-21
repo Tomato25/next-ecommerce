@@ -7,7 +7,7 @@ const getProducts = async () => {
     apiVersion: "2022-11-15",
   });
   const products = await stripe.products.search({
-    query: 'metadata[\'type\']:\'shoes\''
+    query: 'metadata[\'type\']:\'tracksuit\''
   });
 
   const productWithPrices = await Promise.all(
@@ -28,8 +28,11 @@ const getProducts = async () => {
 
 export default async function Shoes() {
   const products = await getProducts();
-  
+  console.log(products)
 
+  //const filteredProducts = products.filter(product =>{
+    //return product.name !== "HANDBALL SPEZIAL SHOES"
+  //})
 
   return (
     <>

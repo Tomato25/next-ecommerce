@@ -13,7 +13,7 @@ const fetchOrders = async () => {
   }
 
   const orders = await prisma.order.findMany({
-    where: { userId: user?.user?.id, status: "complete" },
+    where: { userId: user?.user?.id, /* status: "complete" */ },
     include: { products: true },
   });
   return orders;
@@ -48,7 +48,7 @@ export default async function Dashboard() {
             </p>
             <p>Time: {new Date(order.createDate).toString()}</p>
 
-            <div className=" text-sm lg:flex items-center gap-2">
+            <div className=" text-sm lg:flex items-start gap-4 my-4 flex-col">
               {order.products.map((product) => (
                 <div className="py-2 " key={product.id}>
                   <h2 className="py-2">{product.name}</h2>

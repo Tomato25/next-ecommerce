@@ -32,7 +32,7 @@ export default async function RootLayout({
   const session = await getServerSession(authOptions);
   console.log(session);
   return (
-    <html className={` ${roboto.variable} ${lobster.variable} `} lang="en">
+    <html className="font-avantgarde" lang="en">
       <Hydrate>
         <Nav user={session?.user} expires={session?.expires as string} />
         {children}

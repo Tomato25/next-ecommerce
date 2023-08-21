@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         lobster: ["var(--font-lobster)"],
         roboto: ["var(--font-roboto)"],
+        avantgarde: ["AVANTGARDE"]
       },
       height: {
         '90vh': '90vh',
