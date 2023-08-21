@@ -6,7 +6,6 @@ import { IoAddCircle, IoRemoveCircle } from "react-icons/io5";
 import basket from "@/public/shopping-basket.png";
 import { AnimatePresence, motion } from "framer-motion";
 import Checkout from "./Checkout";
-import OfrderConfirmed from "./OrderConfirmed";
 import OrderConfirmed from "./OrderConfirmed";
 
 export default function Cart() {
