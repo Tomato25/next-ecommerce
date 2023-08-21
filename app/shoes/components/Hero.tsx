@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import image from "../../../public/shoesBig.jpg";
+import image from "../../../public/shoesbig.jpg";
 import { motion } from "framer-motion";
 
 export default function Hero() {
